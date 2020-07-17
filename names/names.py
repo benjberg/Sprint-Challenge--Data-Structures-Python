@@ -37,3 +37,6 @@ print (f"runtime: {end_time - start_time} seconds")
 
 
 # duplicates = list(set(names_1).intersection(names_2)) #.00347 secs stretch
+# duplicates = set(names_1) & set(names_2) #.00446 run time 
+
+# & operator means give me the interect between the two list, or alternatively (and it seems to be the faster case) you can just call the intersect method on set(names_1) passing names_2 as the list to check against 
